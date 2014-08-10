@@ -1,7 +1,9 @@
 
+@import url(http://fonts.googleapis.com/earlyaccess/amiri.css);
 body {
 
     background: #f2f2f2;
+    direction: rtl;
 
 }
 
@@ -135,3 +137,20 @@ body {
     }
 
 }
+
+
+.page2{
+  .sperator{
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(255,0,0) 50%,rgba(0,0,0,0) 100%);
+    width: 80%;
+    height: 3px;
+    margin: 20px 10%;
+  }
+  p{
+    font-family: 'Amiri', serif;
+    color: red;
+    font-size: 2em;
+    padding: 40px;
+  }
+}
+
