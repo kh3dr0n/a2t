@@ -1,10 +1,15 @@
-
-@import "../bower_components/normalize-css/normalize.css";
-@import url(//fonts.googleapis.com/earlyaccess/amiri.css);
+@import "reset";
+@import "fullpage";
+@import "checkbox";
+@import "gridimg";
+@import url(http://fonts.googleapis.com/earlyaccess/amiri.css);
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
 body {
     background: #f2f2f2;
-    direction: rtl;
   }
+.rtl{
+    direction: rtl;
+}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -21,6 +26,35 @@ body {
         bottom: 50px;
     }
   }
+
+
+.sperator {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(255, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+    width: 80%;
+    height: 3px;
+    margin: 20px 10%;
+}
+.fullPage-slidesNav{
+    ul{
+        li{
+            width: 18px;
+            height: 18px;
+            a{
+                span{
+                    width: 18px;
+                    height: 18px;
+                    border: none;
+                    background: black;
+                }
+                &.active{
+                    span{
+                        background: red;
+                    }
+                }
+            }
+        }
+    }
+}
 .page1 {
     img.logo {
         margin-bottom: 50px;
@@ -90,16 +124,26 @@ body {
     }
   }
 .page2 {
-    .sperator {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(255, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
-        width: 80%;
-        height: 3px;
-        margin: 20px 10%;
-    }
     p {
         font-family: 'Amiri', serif;
         color: red;
         font-size: 2em;
         padding: 40px;
+    }
+  }
+
+
+  .question{
+        .controlArrow{
+            display: none;
+        }
+    .slide{
+        .tableCell{
+        padding: 80px;
+        h1{
+            color:red;
+            font-size: 3em;
+        }
+        }   
     }
   }
